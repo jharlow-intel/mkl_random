@@ -42,4 +42,6 @@ except ModuleNotFoundError:
     test = PytestTester(__name__)
     del PytestTester
 
+from ._patch import monkey_patch, use_in_numpy, restore, is_patched, patched_names, mkl_random
+
 del _init_helper
